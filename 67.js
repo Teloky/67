@@ -5,8 +5,9 @@ document.getElementById("rng").textContent = number;
 settimeout(() => {
 if (number === 67) {
     window.location.href = "brainrot.html";
-}, 5000)
 }
+}, 5000)
+
 
 document.getElementById("reroll").addEventListener("click", function() {
     number = Math.floor(Math.random() * 100);
