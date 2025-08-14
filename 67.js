@@ -1,7 +1,7 @@
 let number = Math.floor(Math.random() * 100);
 document.getElementById("rng").textContent = number;
 
-// Check at page load
+
 if (number === 67) {
     window.location.href = "brainrot.html";
 }
@@ -9,12 +9,11 @@ if (number === 67) {
 
 document.getElementById("reroll").addEventListener("click", function() {
     number = Math.floor(Math.random() * 100);
-    document.getElementById("rng").textContent = number;
-
-    // Check after reroll
+    document.getElementById("rng").textContent = number
     if (number === 67) {
         window.location.href = "brainrot.html";
-    }      
+    }        
 });
+
 
 
